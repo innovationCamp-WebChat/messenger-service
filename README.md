@@ -1,54 +1,11 @@
-# Messenger-Service
-대용량 트래픽을 처리할 수 있는 MSA기반 회비 관리 메신저 서비스
-
-[__API__](https://github.com/innovationCamp/swagger/blob/master/swagger.yaml)
-
-ubuntu default 중복 문제 테스트중
-
-localhost:8080 swagger URL 
-
-http://localhost:8080/swagger-ui/index.html
-http://localhost:8080/actuator
-프로메테우스
-http://localhost:9090 
-그라파나
-http://localhost:7070
-
-[__User Flow Chart__](https://www.figma.com/file/8ZfGH2pZ8q3Eft5VJIsjP2/%EC%9D%B4%EB%85%B8%EC%BA%A0%EC%B5%9C%EC%A2%85?type=whiteboard&node-id=0%3A1&t=hyIOBTylmqQslWvc-1)  
-[__와이어 프레임__](https://www.figma.com/file/j4b8RsE6lLowoqLKzphLuK/%EB%A9%94%EC%8B%A0%EC%A0%80-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&node-id=0%3A1&mode=design&t=pDWQ5AnMDMFjdghp-1)  
-[__ERD__](https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing)  
-
-
-
-
-# Messenger-Service
-대용량 트래픽을 처리할 수 있는 MSA기반 회비 관리 메신저 서비스
-
-[__API__](https://github.com/innovationCamp/swagger/blob/master/swagger.yaml)
-
-ubuntu default 중복 문제 테스트중
-
-localhost:8080 swagger URL 
-
-http://localhost:8080/swagger-ui/index.html
-http://localhost:8080/actuator
-프로메테우스
-http://localhost:9090 
-그라파나
-http://localhost:7070
-
-[__User Flow Chart__](https://www.figma.com/file/8ZfGH2pZ8q3Eft5VJIsjP2/%EC%9D%B4%EB%85%B8%EC%BA%A0%EC%B5%9C%EC%A2%85?type=whiteboard&node-id=0%3A1&t=hyIOBTylmqQslWvc-1)  
-[__와이어 프레임__](https://www.figma.com/file/j4b8RsE6lLowoqLKzphLuK/%EB%A9%94%EC%8B%A0%EC%A0%80-%EC%84%9C%EB%B9%84%EC%8A%A4-%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?type=design&node-id=0%3A1&mode=design&t=pDWQ5AnMDMFjdghp-1)  
-[__ERD__](https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing)  
-
 ![image](https://github.com/innovationCamp/messenger-service/assets/132903726/65141935-2590-4aaf-98b3-561a88d44bf4)
-
 
 # WebChat
 ### 대규모 트래픽 처리가 가능한 실시간 채팅 서비스
 - 180개 국가에서 대규모의 사람이 이용하는 WhatsApp채팅 앱 서비스를 오마주한 채팅 서비스
 - 현대 사회에 필수불가결한 메신저 어플의 대용량 데이터 발생과 이로 인한 부하를 견뎌내기 위해 필요한 대책을 직접 리서치 및 적용
 
+[WebChat.pdf](https://github.com/innovationCamp/messenger-service/files/12566998/WebChat.pdf)
 ---
 ## 프로젝트 목표
 ### 1. 초당 5000건의 동시 트래픽을 감당하는 채팅 서비스
@@ -73,15 +30,6 @@ http://localhost:7070
 
 ### 4. 채팅 검색 기능
 - 검색 성능 개선
-- Version 0.1
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/5cfa0b71-0c7f-4142-a87d-371666f3058e)
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/fac33992-db00-4aa0-a82f-871f6bd657a1)
-- Version 0.2
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/db7ed7e0-616d-43fa-ad15-aba843b599ad)
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/ed60c12c-5a37-4cbc-a97d-19dd0b96d8e2)
-- Version 0.3
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/95a2d210-fd01-417a-afce-bad1db2ef325)
-![image](https://github.com/innovationCamp/messenger-service/assets/132903726/de71fce0-8af1-432e-856d-ecc8bf126f86)
 
 ---
 ## 영상
@@ -89,13 +37,13 @@ http://localhost:7070
 - [간단 홍보 영상](https://youtu.be/uscni2WGS4U)
 - 핵심 기능 시연 영상
 
-  
-[WebChat.pdf](https://github.com/innovationCamp/messenger-service/files/12566998/WebChat.pdf)
+| 채팅 | 전자지갑 |
+|------|---------|
+|<img src="https://file.miricanvas.com/user_video/2023/09/07/16/50/kb4g68jlyf079v5n/2023-09-07_16-33-46.mp4" alt="채팅시연" width="450" height="450"> | <img src="https://file.miricanvas.com/user_video/2023/09/07/17/20/ktu21m8yxip9jlao/wallet.mp4" alt="전자지갑 시연" width="450" height="450"> |
 
-- 부하 테스트 시연 영상
-  
-|1. 도커 스웜을 통한 클러스터 환경 구축|2. JMeter를 통한 부하 테스트 시작|
-
+| Jmeter 테스트 | 모니터링 |
+|---------------|----------|
+|<img src="https://file.miricanvas.com/user_video/2023/09/07/16/50/kxxo8r8zcoqvz9zv /2023 -09 -7 _16 -40 -56.mp4 "alt ="Jmeter 시연 "width =" 450 "height =" 450 "> | <img src = "https: // file .miricanvs. com /user _video /2023 /09 /07 /16 /50/kpf3kgm0zonwm0of /2023 -09 -7 _16 -46 -28.mp4 "alt ="모니터링 시연 "width =" 450 "height =" 450 "> |
 
 ---
 ## 서비스 아키텍처 ⚙️
@@ -117,21 +65,27 @@ http://localhost:7070
 
 
 ---
-## ERD, 유저 플로우 🏄
+## ERD 🏄
 <details>
     <summary>ERD 펼쳐보기</summary>
-    <img src="https://github.com/god-kao-talk/.github/assets/54833128/56a5afca-7256-47c2-9ad4-0e300ff74426" alt="erd">
+    <img src="https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing" alt="erd">
 </details>
-
 
 ---
 ## 부하 테스트 및 성능 개선 🔥
 - [🐬version 0.1]
+
+|아키텍쳐|성능 테스트|
+|---|---|
+|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/5cfa0b71-0c7f-4142-a87d-371666f3058e){:height="450px" width="450px"}|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/fac33992-db00-4aa0-a82f-871f6bd657a1){:height="450px" width="450px"}|
 - [🐒version 0.2]
+|아키텍쳐|성능 테스트|
+|---|---|
+|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/db7ed7e0-616d-43fa-ad15-aba843b599ad){:height="450px" width="450px"}|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/ed60c12c-5a37-4cbc-a97d-19dd0b96d8e2){:height="450px" width="450px"}|
 - [🐅version 0.3]
-- [❌version 0.x]
-- [최종 성능 개선 결과](https://www.notion.so/dca6e10439e84264b390f12abbda9d93)
-    - [부하 테스트 기록](https://docs.google.com/spreadsheets/d/1K3fgQ_T9y2-cGr0WNEFuMYYJ845qjKn5BfrGWD9_tHo/edit#gid=1540611111)
+|아키텍쳐|성능 테스트|
+|---|---|
+|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/95a2d210-fd01-417a-afce-bad1db2ef325){:height="450px" width="450px"}|![image](https://github.com/innovationCamp/messenger-service/assets/132903726/de71fce0-8af1-432e-856d-ecc8bf126f86){:height="450px" width="450px"}|
 
 ---## 팀원 👨‍👩‍👦‍👦
 |역할|이름|담당|github|
