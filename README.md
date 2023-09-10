@@ -1,5 +1,4 @@
 
-https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/86f7ce8b-0e9a-4e45-9331-63e48533cd7c
 ![image](https://github.com/innovationCamp/messenger-service/assets/132903726/65141935-2590-4aaf-98b3-561a88d44bf4)
 
 # WebChat
