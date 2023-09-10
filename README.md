@@ -6,7 +6,7 @@
 - 180개 국가에서 대규모의 사람이 이용하는 WhatsApp채팅 앱 서비스를 오마주한 채팅 서비스
 - 현대 사회에 필수불가결한 메신저 어플의 대용량 데이터 발생과 이로 인한 부하를 견뎌내기 위해 필요한 대책을 직접 리서치 및 적용
 
-[WebChat.pdf](https://github.com/innovationCamp/messenger-service/files/12566998/WebChat.pdf)
+[WebChat 발표자료](https://github.com/innovationCamp/messenger-service/files/12566998/WebChat.pdf)
 ---
 ## 프로젝트 목표
 ### 1. 초당 5000건의 동시 트래픽을 감당하는 채팅 서비스
@@ -52,18 +52,13 @@
 
 ### 활용 기술 / 기술적 의사 결정
 
-| 요구사항 | 선택지 | 핵심 기술을 선택한 이유 및 근거  |
+| 요구사항 | 선택지 | 핵심 기술을 선택한 이유 및 근거 |
 | --- | --- | --- |
-| 실시간 채팅 | Web socket,Http Polling | - 서버가 클라이언트에게 비동기 메시지를 보낼 때 가장 널리 사용하는 기술- 양방향 메시지 전송까지 가능 |
-| 부하테스트 | jmeter, ngrinder | - jmeter선택- 소켓 통신 테스트를 위해- jmeter는 다양한 플러그인과 확장기능을 제공,   많은 사용자들에게 알려진 도구로서 문제 해결이나   도움을 받기 용이 |
-| 메세지 큐 | kafka, rabbitMQ | - 비동기적으로 DB에 저장할 수 있고 정합성을 보장- Producer와 Consumer를 가지고 대용량의 데이터를 처리하는데 강점을 가지는 kafka 선택 |
-| 모니터링 | grafana,prometheus | - grafana : 지표를 시각화 하는데 특화 |
-| 배포 환경 구성 | docker compose,docker swarm,kubernetes | - Compose 파일에 정의된 서비스들을 한 번에 실행할 수 있으며, 단일 호스트와 비교적 간단한 애플리케이션인 경우 충분하다고 판단 |
-| 데이터베이스 | MySQL, MongoDB | - 데이터의 원자성이 보장되는 관계형데이터베이스 중 익숙한 MySQL로 구현- 수정할 일이 없고 속도가 중요한 채팅에서 NoSQL이 강점을 가진다 생각하여 채팅만 MongoDB로 변경 |
-| CI/CD | Github Action,Jenkins | - 클라우드에서 동작하므로 어떤 설치도 필요 없다. 모든 GitHub 이벤트에 대해 GitHub Actions를 제공하고 있다. GitHub에 push, PR 이벤트가 발생할 때 자동 테스트, 배포가 쉽게 이루어지기 때문에 개발에 몰두할 수 있음
-- git action 은 yaml 기반으로 위크플로우로 정의하여 쉽게 구성 가능
-- jenkins는 ci/cd 파이프라인을 유연하게 구축가능 |
-
+| 실시간 채팅 | Web socket, Http Polling | - 서버가 클라이언트에게 비동기 메시지를 보낼 때 가장 널리 사용하는 기술입니다. 양방향 메시지 전송까지 가능합니다. |
+| 부하테스트 | JMeter, nGrinder | - JMeter 선택: 소켓 통신 테스트를 위해 사용되며 다양한 플러그인과 확장 기능을 제공하여 문제 해결이나 도움을 받기 용이한 도구입니다. |
+| 메세지 큐 | Kafka, RabbitMQ | - Kafka 선택: 비동기적으로 대용량의 데이터를 처리할 수 있는 메세지 큐로서 Producer와 Consumer를 가지고 있어 데이터의 정합성을 보장할 수 있습니다. 대규모 데이터 처리에 강점을 가진 기술입니다. |
+| 모니터링   | Grafana, Prometheus   |- Grafana 선택: 지표를 시각화하는데 특화된 도구로서 모니터링 환경 구축에 적합합니다. 시각적으로 정보 파악이 용이하며 다양한 대시보드와 알림 설정 등의 기능을 제공합니다.|
+| 배포 환경 구성  | Docker Compose, Docker Swarm, Kubernetes  |- Docker Compose 선택: 단일 호스트에서 비교적 간단한 애플리케이션 실행에 사용됩니다. Docker Swarm과 Kubernetes는 클러스터 환경에서 컨테이너 오케스트레이션과 관리를 위해 선택될 수 있는 옵션입니다. 프로젝트의 규모와 요구사항에 따라 결정되어야 합니다.
 
 ---
 ## ERD 🏄
@@ -97,5 +92,5 @@
 | --- | --- | --- | ---|
 |팀장	|최선효	| 	|https://github.com/cornpip|
 |팀원	|추광현	| 	|https://github.com/KH-CHOO|
-|팀원	|강영준	| 	|https://github.com/Kkangjn|
-|팀원	|한정은	| 	|hanjungeun0909 (github.com)|
+|팀원	|강영준	| - 회원가입, 로그인 구현, Interceptor를 활용한 Jwt 토큰 인증  <br> - Web socket, Stomp를 활용하여 실시간 채팅 구현 <br> - 스케줄러를 이용하여 예약송금 구현 <br> - 채팅 데이터베이스 MongoDB로 변경하여 성능개선 <br> - 메세지 큐로 Kafka를 활용하여 채팅의 DB저장과 Publish 분리하여 성능개선	|https://github.com/Kkangjn|
+|팀원	|한정은	| - Contact api 구현 <br> - prometheus, grafana를 활용하여 모니터링 구현 <br> - docker compose를 활용하여 배포 환경 구성 <br> - dockerfile을 활용하여 github action으로 docker image 생성 및 ci/cd 구축 <br> - jmeter 통한 websocket의 부하테스트	|hanjungeun0909 (github.com)|
