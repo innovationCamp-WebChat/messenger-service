@@ -30,7 +30,7 @@ https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/86f
     - MongoDB
     - Cassandra
 
-### 4. 채팅 검색 기능
+### 4. 전자지갑 동시성 제어
 - 검색 성능 개선
 
 ---
@@ -39,18 +39,13 @@ https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/86f
 - [간단 홍보 영상](https://youtu.be/uscni2WGS4U)
 - 핵심 기능 시연 영상
 
-
 | 채팅 | 전자지갑 |
 |---|---|
-|<img src="![채팅시연-_online-video-cutter com_](https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/359d9fff-f095-40bc-8477-423a6797acc3)
-" alt="채팅시연" width="450" height="450"> | <img src="![전자지갑시연-_online-video-cutter com_](https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/60081942-aa29-40bd-aa87-30ec767617f3)
-" alt="전자지갑 시연" width="450" height="450"> |
+|<img src="https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/359d9fff-f095-40bc-8477-423a6797acc3" alt="채팅" width="450" height="300">|<img src="https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/60081942-aa29-40bd-aa87-30ec767617f3" alt="전자지갑" width="450" height="300">|
 
 | Jmeter 테스트 | 모니터링 |
 |---|---|
-|<img src="![jmeter-레포트-_online-video-cutter com_](https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/57300f9d-79fe-48b2-a028-1cdc5a5375bf)
-"alt ="Jmeter 시연 "width =" 450 "height =" 450 "> | <img src = "![그라파나-_online-video-cutter com_ (1)](https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/97956b46-bebc-49ca-8d11-73e8fae72674)
-"alt ="모니터링 시연 "width =" 450 "height =" 450 "> |
+|<img src="https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/57300f9d-79fe-48b2-a028-1cdc5a5375bf" alt="jmeter-레포트" width="450" height="300">|<img src="https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/97956b46-bebc-49ca-8d11-73e8fae72674" alt="부하 테스트 시작" width="450" height="300">|
 
 ---
 ## 서비스 아키텍처 ⚙️
@@ -75,7 +70,7 @@ https://github.com/innovationCamp-WebChat/messenger-service/assets/132903726/86f
 ## ERD 🏄
 <details>
     <summary>ERD 펼쳐보기</summary>
-    <img src="https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing" alt="erd">
+    [<img src="https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing" alt="erd">](https://drive.google.com/file/d/1tyw0lz4LS69rVJofofqzTM7UFXcJphMI/view?usp=sharing)
 </details>
 
 ---
